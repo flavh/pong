@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pong Flavien</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="init()">
+    <div class="conteneur">
+      <div class="ecran" id="ecranJ1Win">Joueur 1 a gagné !</div>
+      <div class="ecran" id="ecranJ2Win">Joueur 2 a gagné !</div>
+      <div id="unJ" class="un">1 joueur</div>
+      <div id="deuxJ" class="un deux">2 joueurs</div>
+      <input
+        type="number"
+        class="un"
+        id="win"
+        placeholder="Points:10"
+        min="0"
+      />
+      <canvas class="shadow" id="canvas" width="800" height="550"></canvas>
+    </div>
+    <script src="pong.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+* {
+  font-family: "Press Start", cursive;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conteneur {
+  position: relative;
+}
+.un {
+  letter-spacing: 3px;
+  text-align: center;
+  width: 175px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: black;
+  background: white;
+  font-weight: 1000;
+}
+.shadow {
+  box-shadow: 0 0 20px white;
+}
+.un:hover {
+  box-shadow: inset 5px 5px 50px rgba(0, 0, 0, 0.5);
+}
+.deux {
+  top: 55%;
+}
+.ecran {
+  position: absolute;
+  background: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#win {
+  top: 65%;
+}
+#canvas {
+  border-radius: 20px;
+}
+
+@font-face {
+  font-family: "Press Start";
+  src: url("PressStart.ttf");
+}
