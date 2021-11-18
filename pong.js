@@ -47,7 +47,7 @@ const j2 = new Paddle(
   largeurPaddle,
   hauteurPaddle,
   Math.floor(Math.random() * 2),
-  10,
+  9,
   0
 );
 
@@ -136,8 +136,7 @@ function update() {
     if (j2.y + j2.hauteur >= canvas.height) {
       j2.vectY = -Math.abs(j2.vectY);
     }
-
-    j2.y += j2.vectY * j2.vitesse;
+    j2.y += j2.vectY* j2.vitesse;
   } else {
     if (j2.y > 0 && monte2 == true) {
       j2.y += -j2.vitesse;
