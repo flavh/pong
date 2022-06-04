@@ -121,12 +121,12 @@ function update() {
   //----- j2 -----
   if (bot) {
     //suivi de la balle
-    if (balle.y < j2.y + j2.hauteur / 2) {
+    if (balle.y < j2.y + j2.hauteur / 2 - j2.vitesse) {
       j2.vectY = -1;
-    } else if (balle.y == j2.y + j2.hauteur / 2) {
-      j2.vectY = 0;
-    } else {
+    } else if(balle.y > j2.y + j2.hauteur/2 + j2.vitesse) {
       j2.vectY = 1;
+    }else{
+      j2.vectY = 0;
     }
 
     //rebond sur les bords
